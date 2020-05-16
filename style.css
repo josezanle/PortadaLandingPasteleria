@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    transition: all .1s ease;
+    background-image: url(img1.jpg);
+    background-size: 100%;
+    animation: banner 28s infinite;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url(img1.jpg);
+    }
+    25% {
+        background-image: url(img1.jpg);
+    }
+    26% {
+        background-image: url(img2.jpg);
+    }
+    50% {
+        background-image: url(img2.jpg);
+    }
+    51% {
+        background-image: url(img3.jpg);
+    }
+    75% {
+        background-image: url(img3.jpg);
+    }
+    76% {
+        background-image: url(img4.jpg);
+    }
+    100% {
+        background-image: url(img4.jpg);
+    }
+}
+
+.container h1 {
+    position: relative;
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    z-index: 20;
+    margin-left: 30%;
+    margin-top: 250px;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+}
+
+.container h6 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 570px;
+    top: -15px;
+    color: white;
+    font-size: 2em;
+    z-index: 20;
+}
+
+.capa-gradiente {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(top, rgb(0, 0, 0), rgb(207, 85, 3));
+    border-style: none;
+    opacity: .5;
+    z-index: 10;
+}
+
+.container-detail {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.container a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 18px;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 1px rgb(126, 117, 117);
+    cursor: pointer;
+    background: none;
+    color: white;
+    z-index: 20;
+    top: -13px;
+    text-align: center;
+    transition: background 300ms;
+}
+
+.container a:hover {
+    background: white;
+    color: black;
+}
+
+
+/* Smartphones (portrait & landscape) */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {}
+
+
+/* Smartphones (landscape) */
+
+@media only screen and (min-width: 321px) {}
+
+
+/* Smartphones (portrait) */
+
+@media only screen and (max-width: 320px) {}
+
+
+/* iPads (portrait & landscape) */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+
+/* iPads (landscape) */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+
+
+/* iPads (portrait) */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+
+
+/* Ordenadores de sobremesa y portátiles */
+
+@media only screen and (min-width: 1224px) {}
+
+
+/* Pantallas grandes */
+
+@media only screen and (min-width: 1824px) {}
+
+
+/* iPhone 4 */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {}
